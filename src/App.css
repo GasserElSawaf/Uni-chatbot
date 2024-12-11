@@ -1,0 +1,1525 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+/* Header */
+.header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  text-align: center;
+}
+
+/* Logout Button */
+.logout-btn {
+  background-color: #f44336;
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f;
+  transform: scale(1.05);
+}
+
+/* View All Registered Students Button */
+.view-btn {
+  background-color: #2196F3;
+  color: white;
+  font-size: 18px;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+  margin: 20px auto;
+  display: block;
+  width: fit-content;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.view-btn:hover {
+  background-color: #1976D2;
+  transform: scale(1.1);
+}
+
+/* Box */
+.box {
+  width: 300px;
+  margin: 100px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.box input,
+.box select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.box button {
+  padding: 10px 20px;
+  margin: 5px;
+}
+
+/* Back Button */
+.back-btn {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+/* Chatbox */
+.chatbox {
+  max-width: 600px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+}
+
+.messages {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.message {
+  margin: 10px 0;
+}
+
+.message.bot {
+  text-align: left;
+  color: #333;
+}
+
+.message.user {
+  text-align: right;
+  color: #007BFF;
+}
+
+.input-box {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 15px;
+  border: none;
+}
+
+.input-box button {
+  padding: 15px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-box button:hover {
+  background-color: #45a049;
+}
+
+/* Toggle Container */
+.toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.toggle-container .active {
+  font-weight: bold;
+}
+
+/* Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin: 0 10px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Registrations List */
+.registrations-list {
+  margin: 40px auto;
+  max-width: 90%;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.registrations-list h2 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 2px solid #3e8e41;
+  text-align: center;
+}
+
+.registrations-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.registrations-list th,
+.registrations-list td {
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.registrations-list th {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+.registrations-list td {
+  background-color: #f9f9f9;
+}
+
+.registrations-list tr:nth-child(even) td {
+  background-color: #f2f2f2;
+}
+
+.registrations-list tr:hover td {
+  background-color: #e8f5e9;
+}
+
+/* Error Message */
+.error {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Fetch Section */
+.fetch-section {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.fetch-btn {
+  background-color: #2196F3;
+  color: white;
+  font-size: 18px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.fetch-btn:hover {
+  background-color: #1e88e5;
+  transform: scale(1.05);
+}
+
+.fetch-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+/* University Info Button */
+.info-btn {
+  background-color: #FFA500; /* Bright orange for visibility */
+  color: white; /* Contrast text */
+  font-size: 18px; /* Readable font size */
+  padding: 12px 25px; /* Comfortable padding */
+  border: none; /* No border for modern look */
+  border-radius: 8px; /* Rounded edges for smooth appearance */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition effects */
+  margin-left: 10px; /* Slight spacing from the adjacent button */
+  display: inline-block; /* Align with other buttons */
+}
+
+.info-btn:hover {
+  background-color: #FF8C00; /* Slightly darker orange on hover */
+  transform: scale(1.05); /* Subtle scale effect */
+}
+
+.info-btn:active {
+  background-color: #FF7F00; /* Even darker orange when pressed */
+  transform: scale(0.95); /* Slight press-in effect */
+}
+/* Logout Button */
+.header button {
+  background-color: #f44336; /* Bright red for logout */
+  color: white; /* Contrast text */
+  font-size: 16px; /* Readable font size */
+  padding: 10px 20px; /* Comfortable padding */
+  border: none; /* Clean borderless design */
+  border-radius: 5px; /* Smooth edges */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  float: right; /* Align to the right */
+  margin: 10px 20px; /* Add margin for spacing */
+}
+
+/* Hover and Active Effects */
+.header button:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+  transform: scale(1.05); /* Subtle scaling effect */
+}
+
+.header button:active {
+  background-color: #b71c1c; /* Even darker red when pressed */
+  transform: scale(0.95); /* Slight press-in effect */
+}
+.message-box {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.message-box.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.message-box.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+.message-box {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.message-box.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.message-box.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+.table-container {
+  overflow-x: auto; /* Enables horizontal scrolling */
+  margin-top: 20px;
+}
+
+table {
+  width: 100%; /* Ensures the table uses all available width */
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #e8f5e9;
+}
+/* src/App.css */
+
+.input-box {
+  position: relative;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.input-box button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.input-box button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.word-counter {
+  align-self: flex-end;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #555;
+}
+
+.word-counter.exceeded {
+  color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+
+/* src/App.css */
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+/* Header */
+.dashboard h1 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  text-align: center;
+}
+
+/* Logout Button */
+.logout-btn {
+  background-color: #f44336;
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f;
+  transform: scale(1.05);
+}
+
+/* View All Registered Students Button */
+.fetch-btn {
+  background-color: #2196F3;
+  color: white;
+  font-size: 18px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.fetch-btn:hover {
+  background-color: #1e88e5;
+  transform: scale(1.05);
+}
+
+.fetch-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Info Button */
+.info-btn {
+  background-color: #FFA500; /* Bright orange for visibility */
+  color: white; /* Contrast text */
+  font-size: 18px; /* Readable font size */
+  padding: 12px 25px; /* Comfortable padding */
+  border: none; /* No border for modern look */
+  border-radius: 8px; /* Rounded edges for smooth appearance */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition effects */
+  margin-left: 10px; /* Slight spacing from the adjacent button */
+  display: inline-block; /* Align with other buttons */
+}
+
+.info-btn:hover {
+  background-color: #FF8C00; /* Slightly darker orange on hover */
+  transform: scale(1.05); /* Subtle scale effect */
+}
+
+.info-btn:active {
+  background-color: #FF7F00; /* Even darker orange when pressed */
+  transform: scale(0.95); /* Slight press-in effect */
+}
+
+/* Registrations List */
+.registrations-list {
+  margin: 40px auto;
+  max-width: 90%;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.registrations-list h2 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 2px solid #3e8e41;
+  text-align: center;
+}
+
+.table-container {
+  overflow-x: auto; /* Enables horizontal scrolling */
+  margin-top: 20px;
+}
+
+table {
+  width: 100%; /* Ensures the table uses all available width */
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+  border-bottom: 1px solid #dddddd;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+td {
+  background-color: #f9f9f9;
+}
+
+tr:nth-child(even) td {
+  background-color: #f2f2f2;
+}
+
+tr:hover td {
+  background-color: #e8f5e9;
+}
+
+/* Error Message */
+.error {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* University Info */
+.university-info {
+  margin: 40px auto;
+  max-width: 80%;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+}
+
+/* HTML Editor */
+#content {
+  border: 1px solid #ccc;
+  padding: 15px;
+  min-height: 500px;
+  white-space: pre-wrap;
+  background-color: #f9f9f9;
+  text-align: left;
+}
+
+#content[contenteditable="true"] {
+  border: 1px solid #66afe9;
+  background-color: #fff;
+}
+
+/* Edit and Save Buttons in HTML Editor */
+#editBtn, #applyBtn, #cancelBtn {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#editBtn {
+  background-color: #007BFF;
+  color: white;
+}
+
+#editBtn:hover {
+  background-color: #0056b3;
+}
+
+#applyBtn {
+  background-color: #28a745;
+  color: white;
+  margin-right: 10px;
+}
+
+#applyBtn:hover {
+  background-color: #1e7e34;
+}
+
+#cancelBtn {
+  background-color: #dc3545;
+  color: white;
+}
+
+#cancelBtn:hover {
+  background-color: #c82333;
+}
+
+/* Modal Styles */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.edit-form .form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.edit-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.edit-form input,
+.edit-form select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.save-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.save-btn:hover {
+  background-color: #45a049;
+}
+
+.cancel-btn {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Edit Button Styles */
+.edit-btn {
+  background-color: #FFA500; /* Orange color */
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-btn:hover {
+  background-color: #e69500;
+}
+
+/* Message Boxes */
+.message-box {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.message-box.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.message-box.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* src/App.css */
+
+/* Existing CSS styles above... */
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000; /* Ensure it overlays other elements */
+}
+
+/* Modal Content */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Edit Form */
+.edit-form label {
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.edit-form input,
+.edit-form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.save-btn,
+.cancel-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.save-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.save-btn:hover {
+  background-color: #45a049;
+}
+
+.cancel-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Edit Button in Table */
+.edit-btn {
+  background-color: #FFA500; /* Orange color */
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: #FF8C00; /* Darker orange on hover */
+}
+
+/* Additional Styles for Responsiveness and Accessibility */
+@media (max-width: 600px) {
+  .modal {
+    width: 95%;
+  }
+
+  .registrations-list table, 
+  .registrations-list th, 
+  .registrations-list td {
+    font-size: 12px;
+  }
+
+  .edit-btn {
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+}
+
+/* Optional: Scrollbar Styling for Modal Content */
+.modal::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.modal::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* src/App.css */
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+/* Header */
+.header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  text-align: center;
+}
+
+/* Logout Button */
+.logout-btn {
+  background-color: #f44336;
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f;
+  transform: scale(1.05);
+}
+
+/* View All Registered Students Button */
+.view-btn {
+  background-color: #2196F3;
+  color: white;
+  font-size: 18px;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+  margin: 20px auto;
+  display: block;
+  width: fit-content;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.view-btn:hover {
+  background-color: #1976D2;
+  transform: scale(1.1);
+}
+
+/* Box */
+.box {
+  width: 300px;
+  margin: 100px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.box input,
+.box select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.box button {
+  padding: 10px 20px;
+  margin: 5px;
+}
+
+/* Back Button */
+.back-btn {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+/* Chatbox */
+.chatbox {
+  max-width: 600px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+}
+
+.messages {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.message {
+  margin: 10px 0;
+}
+
+.message.bot {
+  text-align: left;
+  color: #333;
+}
+
+.message.user {
+  text-align: right;
+  color: #007BFF;
+}
+
+.input-box {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 15px;
+  border: none;
+}
+
+.input-box button {
+  padding: 15px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-box button:hover {
+  background-color: #45a049;
+}
+
+/* Toggle Container */
+.toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.toggle-container .active {
+  font-weight: bold;
+}
+
+/* Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin: 0 10px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Registrations List */
+.registrations-list {
+  margin: 40px auto;
+  max-width: 90%;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.registrations-list h2 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 2px solid #3e8e41;
+  text-align: center;
+}
+
+.registrations-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.registrations-list th,
+.registrations-list td {
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.registrations-list th {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+.registrations-list td {
+  background-color: #f9f9f9;
+}
+
+.registrations-list tr:nth-child(even) td {
+  background-color: #f2f2f2;
+}
+
+.registrations-list tr:hover td {
+  background-color: #e8f5e9;
+}
+
+/* Error Message */
+.error {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Fetch Section */
+.fetch-section {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.fetch-btn {
+  background-color: #2196F3;
+  color: white;
+  font-size: 18px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.fetch-btn:hover {
+  background-color: #1e88e5;
+  transform: scale(1.05);
+}
+
+.fetch-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* University Info Button */
+.info-btn {
+  background-color: #FFA500; /* Bright orange for visibility */
+  color: white; /* Contrast text */
+  font-size: 18px; /* Readable font size */
+  padding: 12px 25px; /* Comfortable padding */
+  border: none; /* No border for modern look */
+  border-radius: 8px; /* Rounded edges for smooth appearance */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition effects */
+  margin-left: 10px; /* Slight spacing from the adjacent button */
+  display: inline-block; /* Align with other buttons */
+}
+
+.info-btn:hover {
+  background-color: #FF8C00; /* Slightly darker orange on hover */
+  transform: scale(1.05); /* Subtle scale effect */
+}
+
+.info-btn:active {
+  background-color: #FF7F00; /* Even darker orange when pressed */
+  transform: scale(0.95); /* Slight press-in effect */
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000; /* Ensure it overlays other elements */
+}
+
+/* Modal Content */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Edit Form */
+.edit-form .form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.edit-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.edit-form input,
+.edit-form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.save-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.save-btn:hover {
+  background-color: #45a049;
+}
+
+.cancel-btn {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Edit Button Styles */
+.edit-btn {
+  background-color: #FFA500; /* Orange color */
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-btn:hover {
+  background-color: #e69500;
+}
+
+/* Message Boxes */
+.message-box {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.message-box.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.message-box.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Additional Styles for Responsiveness and Accessibility */
+@media (max-width: 600px) {
+  .modal {
+    width: 95%;
+  }
+
+  .registrations-list table, 
+  .registrations-list th, 
+  .registrations-list td {
+    font-size: 12px;
+  }
+
+  .edit-btn {
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+}
+
+/* Optional: Scrollbar Styling for Modal Content */
+.modal::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.modal::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+/* src/App.css */
+
+/* Existing CSS styles above... */
+
+/* Forgot Password Button */
+.forgot-password-btn {
+  background: none;
+  border: none;
+  color: #007BFF;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.forgot-password-btn:hover {
+  color: #0056b3;
+}
+
+/* Adjust Modal Styles if necessary */
+.modal {
+  /* Existing modal styles */
+}
+
+.modal-overlay {
+  /* Existing overlay styles */
+}
+
+/* Message Boxes */
+.message-box.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.message-box.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Additional Styles for Forms */
+.forgot-password-form .form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.forgot-password-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.forgot-password-form input,
+.forgot-password-form select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+/* Adjust "Save" and "Cancel" buttons in modals */
+.save-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.save-btn:hover {
+  background-color: #45a049;
+}
+
+.cancel-btn {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  background-color: #d32f2f;
+}
+
+
+
+

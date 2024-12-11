@@ -1,0 +1,59 @@
+
+Student Registration Information with Examples
+
+1. Full Name:
+   Explanation: The complete legal name of the student as it appears on official documents.
+   Example: Ahmed Mohamed Ali
+
+2. Date of Birth:
+   Explanation: The exact date the student was born, formatted as DD/MM/YYYY.
+   Example: 15/04/2005
+
+3. Gender:
+   Explanation: The gender identity of the student, such as Male, Female, or Other.
+   Example: Male
+
+4. Nationality:
+   Explanation: The country of citizenship of the student. For example, Egyptian, American, etc.
+   Example: Egyptian
+
+5. Mobile Number:
+   Explanation: A valid phone number through which the student can be contacted.
+   Example: +20 123 456 7890
+
+6. Email Address:
+   Explanation: A valid email address for official communication. It should be in the format: example@domain.com.
+   Example: ahmed.ali@example.com
+
+7. National ID:
+   Explanation: A unique identification number issued by the government of the student’s country. For Egyptian students, this is a 14-digit number found on the national ID card.
+   Guidance: Ensure to enter the ID exactly as it appears on the official ID card.
+   Example: 30310010117873
+
+8. Parent/Guardian Name:
+   Explanation: The full name of the student’s parent or guardian who will act as a point of contact.
+   Example: Fatma Hassan Ahmed
+
+9. Parent/Guardian Contact Number:
+   Explanation: A phone number for reaching the parent or guardian in case of emergencies.
+   Example: +20 987 654 3210
+
+10. Parent/Guardian Email Address:
+    Explanation: An email address for official communication with the parent or guardian.
+    Example: fatma.hassan@example.com
+
+11. High School Name:
+    Explanation: The name of the high school from which the student graduated.
+    Example: Modern High School, Cairo
+
+12. Graduation Year:
+    Explanation: The year the student completed high school education.
+    Example: 2023
+
+13. Preferred Major/Program:
+    Explanation: The program or field of study the student wishes to enroll in. 
+    Example options: 
+      - Law
+      - Computer Science
+      - Mass Communication
+    Example: Computer Science
